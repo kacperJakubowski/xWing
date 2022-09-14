@@ -1,0 +1,47 @@
+body{
+    cursor: none;
+}
+img.logo{
+    z-index: 1;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: logo 6s ease-out 2s;
+    
+}
+@keyframes logo{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+.xWing{
+    z-index: 1;
+    background-image: url(media/xWing.png);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 400px;
+    height: 227px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
